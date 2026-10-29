@@ -153,18 +153,3 @@ The three status categories are almost evenly represented. These are descriptive
 6. Use the available filters and tooltips to inspect particular groups. Filtered results may differ from the full-dataset totals above.
 
 GitHub provides static previews and downloads; interactive exploration requires opening the dashboard files in the appropriate application.
-
-## Possible future improvements
-
-- Add focused pilot and nationality-by-status views with clearly defined record-based metrics.
-- Improve age-group sorting, ranking labels, and consistent status colors.
-- Use percentage comparisons alongside counts when demographic groups differ in size.
-- Add consistent filters for date, status, demographics, and geography where useful.
-- Consider consolidating Power BI into Executive Overview, Passenger & Airport Analytics, and Operations & Performance pages.
-
-These are proposed enhancements, not completed features.
-
-## Author
-
-**Tanay Totade**  
-[GitHub profile](https://github.com/TanayTotade)
