@@ -109,6 +109,29 @@ The following figures were calculated from the supplied CSV, before applying das
 
 The three status categories are almost evenly represented. These are descriptive results for this dataset, rather than estimates of real-world airline performance.
 
+## Key Findings & Recommendations
+
+Findings below were calculated from the full source CSV, before dashboard filters. Recommendations identify follow-up analysis and possible actions to evaluate; they are not claims of demonstrated business impact.
+
+| Key finding | Evidence | Recommendation |
+|---|---|---|
+| Passenger gender distribution is nearly balanced. | Male: **49,598 (50.29%)**; female: **49,021 (49.71%)**. | Support both groups in passenger-service planning. Investigate service needs directly before proposing gender-specific initiatives. |
+| The 65+ category has the most records under the Power BI age grouping. | **28,388 records (28.79%)**; overall average age is **45.50 years**. | Explore accessibility, assistance, and booking-support needs. Use equal-width age bands or a histogram to validate the pattern because the existing bands cover different age ranges. |
+| China is the largest nationality group. | China: **18,317 records (18.57%)**, followed by Indonesia (**10,559**) and Russia (**5,693**). | Investigate language and communication needs in the leading nationality groups; validate preferences before selecting translated services. |
+| Airport-country records are concentrated in the United States. | United States: **22,104 records (22.41%)**, followed by Australia (**6,370**) and Canada (**5,424**). | Start country-level traffic and status analysis with these larger groups. Confirm airport coverage before treating the ranking as a market-demand estimate. |
+| North America accounts for the largest continent share. | **32,033 records (32.48%)**, followed by Asia (**18,637**) and Oceania (**13,866**). | Enable continent-to-country drill-down to explore where the recorded traffic is concentrated and whether status proportions vary within regions. |
+| On-time, delayed, and cancelled statuses are almost equally represented. | On Time: **33.31%**; Delayed: **33.29%**; Cancelled: **33.40%**. | Validate the dataset's provenance and status definitions before using these proportions as operational benchmarks. For an operational extension, collect delay duration, cancellation reasons, and flight identifiers. |
+| Delay proportions are similar across gender and age groups. | Male: **33.35%** delayed; female: **33.23%**. Across the Power BI age bands, delayed shares range from **32.87% to 33.48%**. | Use within-group percentages alongside counts. Larger delay counts in a large demographic group do not by themselves indicate a greater likelihood of delay; investigate date, airport, and route factors next. |
+
+### Priorities for further analysis
+
+1. **Validate the reporting grain:** obtain a flight identifier before calculating distinct flight volumes or pilot flight totals.
+2. **Investigate disruption patterns:** compare status percentages by airport, country, and departure period, showing the record count behind each rate.
+3. **Validate route definitions:** confirm the meaning of Airport Name and Arrival Airport before ranking origin–destination combinations.
+4. **Improve comparisons:** use consistent age bands, percentage-based status charts, and geographic filters to make group differences easier to interpret.
+
+These findings describe the supplied dataset. They do not establish why disruptions occurred, prove pilot performance, or justify capacity changes without additional operational evidence.
+
 ## Metric definitions and interpretation
 
 - **Passenger count:** count of passenger records; passenger IDs are unique in the supplied CSV.
