@@ -174,5 +174,3 @@ These findings describe the supplied dataset. They do not establish why disrupti
 4. Open the TWBX file in a compatible Tableau application.
 5. If refreshing requires a source connection, update the CSV path to your local copy of `data/Airline Dataset.csv`.
 6. Use the available filters and tooltips to inspect particular groups. Filtered results may differ from the full-dataset totals above.
-
-GitHub provides static previews and downloads; interactive exploration requires opening the dashboard files in the appropriate application.
